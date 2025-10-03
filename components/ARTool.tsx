@@ -16,40 +16,19 @@ function ARScene() {
     <ViroARScene>
       <ViroAmbientLight color="#FFFFFF" />
 
-      <ViroNode position={[1, -.3, -1]} scale={isLoaded ? [0.3, 0.3, 0.3] : [0.001, 0.001, 0.001]}>
+
+      <ViroNode position={[0, -2, -5]} scale={isLoaded ? [1, 1, 1] : [1, 1, 1]}>
 
         <Viro3DObject
-
-          source={{
-            uri: 'https://raw.githubusercontent.com/google/filament/main/third_party/models/DamagedHelmet/DamagedHelmet.glb'
-          }}
+          source={{ uri: 'https://tkp323s.web.app/Puerta_del_Parian_0928170855_texture.glb' }}
           type="GLB"
           onLoadEnd={() => setIsLoaded(true)}
 
         />
       </ViroNode>
 
-      <ViroNode position={[-1, -.3, -1]} scale={isLoaded ? [0.3, 0.3, 0.3] : [0.001, 0.001, 0.001]}>
+      <ViroNode position={[0, -2, -5]} scale={isLoaded ? [1, 1, 1] : [1, 1, 1]}>
 
-        <Viro3DObject
-          source={{ uri: 'https://modelviewer.dev/shared-assets/models/Astronaut.glb' }}
-          type="GLB"
-          onLoadEnd={() => setIsLoaded(true)}
-
-        />
-      </ViroNode>
-
-
-
-      <ViroNode position={[0, -1, -1]} scale={isLoaded ? [1, 1, 1] : [0.001, 0.001, 0.001]}>
-
-        <Viro3DObject
-          source={{ uri: 'https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb' }}
-
-          type="GLB"
-          onLoadEnd={() => setIsLoaded(true)}
-
-        />
       </ViroNode>
 
 
